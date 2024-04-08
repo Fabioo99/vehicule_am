@@ -1,9 +1,9 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from streamlist import checkbox
+from streamlit import checkbox
 
-car_data = pd.read_csv('vehicules_us.csv')
+car_data = pd.read_csv("vehicules_us.csv")
 
 hist_checkbox = checkbox("Mostrar histograma del odómetro")
 disp_checkbox = checkbox("Mostrar diagrama de dispersión (odómetro vs precio)")

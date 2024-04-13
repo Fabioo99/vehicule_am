@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit import checkbox
 
 car_data = pd.read_csv("vehicles_us.csv")
-
+st.header('Elige una opcion')
 hist_checkbox = checkbox("Mostrar histograma del odómetro")
 disp_checkbox = checkbox("Mostrar diagrama de dispersión (odómetro vs precio)")
 
@@ -18,9 +18,9 @@ if hist_checkbox:
 
 if disp_checkbox:
     st.write('Creación de un diagrama de dispersión (odómetro vs precio)')
-    fig = px.scatter(car_data, car_data, x="odometer", y="price", color="paint_color",
+    fig = px.scatter(car_data, x="odometer", y="price", color="paint_color",
                      title="Dispersión de precio vs. odómetro por marca",
                      labels={"odometer": "Kilometraje", "price": "Precio"},
-                     hover_name="Marca",
-                     hover_data=["Modelo", "Año"])
+                     hover_name="model",
+                     hover_data=["model_year"])
     st.plotly_chart(fig)

@@ -6,5 +6,5 @@ Esta aplicación web interactiva te permite explorar un conjunto de datos de anu
 Casillas de verificación: Selecciona qué gráfico quieres ver: histograma del odómetro o diagrama de dispersión.
 Filtros: Para el diagrama de dispersión, puedes filtrar por color de pintura.
 
-https://vehicule-am-2.onrender.com (https://vehicule-am.onrender.com/)
+https://vehicule-am.onrender.com/
 https://github.com/Fabioo99/vehicule_am.git
